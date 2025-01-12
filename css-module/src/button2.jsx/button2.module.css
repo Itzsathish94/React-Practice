@@ -1,0 +1,12 @@
+.button2{
+    background-color: hsl(10, 91%, 46%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button2:hover{
+    background-color:hsl(10, 91%, 36%);
+}
