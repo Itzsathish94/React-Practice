@@ -1,0 +1,13 @@
+.welcome-message{
+    background-color:hsl(204, 85%, 46%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.login-prompt{
+    background-color:hsl(10, 85%, 46%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
