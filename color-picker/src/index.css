@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-picker-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 10;
+}
+
+.color-picker-display{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 3px solid hsl(0, 0%, 80%);
+    border-radius: 20px;
+    transition: 0.1s ease;
+}
+
+.color-picker-display p {
+    font-size: 2rem;
+    color: hsl(0, 0%, 20%);
+    text-align: center;
+}
+
+label{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input{
+    border-radius: 6px;
+}
+
+
