@@ -1,7 +1,5 @@
 function Button4(){
 
-    let count = 0;
-
     const handleClick4 = (e) => e.target.textContent = 'Ouch! 😔'
 
 
