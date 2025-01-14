@@ -4,7 +4,7 @@ function Button4(){
 
 
     return(
-        <button onClick={(e)=>handleClick4(e)}>Click me 😀</button>
+        <button onClick={handleClick4}>Click me 😀</button>
     );
 }
 

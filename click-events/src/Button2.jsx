@@ -5,7 +5,7 @@ function Button2(){
     }
 
     return(
-        <button onClick={(e)=>handleClick2(e)}>Click me 😀</button>
+        <button onClick={handleClick2}>Click me 😀</button>
     );
 }
 

@@ -6,7 +6,7 @@ function ProfilePicture(){
 
 
     return(
-        <img onClick={(e)=>handleClick(e)} src={imageURL} alt="Profile Picture" />
+        <img onClick={handleClick} src={imageURL} alt="Profile Picture" />
     );
 }
 
