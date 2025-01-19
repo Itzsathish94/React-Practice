@@ -4,7 +4,7 @@ function App() {
   
 
   return (
-     <ComponentA/>
+     <ComponentA user='Bro Camper'/>
   )
 }
 

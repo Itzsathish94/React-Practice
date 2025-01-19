@@ -1,10 +1,10 @@
 import ComponentB from "./ComponentB.jsx";
-import React,{useState} from 'react';
 
 
-function ComponentA(){
+
+function ComponentA(props){
     
-    const [user,setUser] = useState('BroCamper')
+    const user = props.user;
 
     return (
         <div className="box">

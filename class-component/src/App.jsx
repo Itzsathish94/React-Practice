@@ -1,11 +1,11 @@
-import Component from "./Component.jsx"
-
+import Greet from './Component.jsx'
 
 function App() {
-  
+ 
+
   return (
     <>
-     <Component/>
+        <Greet/>
     </>
   )
 }
