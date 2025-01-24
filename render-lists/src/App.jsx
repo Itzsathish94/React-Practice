@@ -1,4 +1,5 @@
 import List from './List.jsx';
+import Practice from './practice.jsx';
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
  
   return (
     <>
-     {fruits.length > 0 && <List items={fruits} category='Fruits'/> }
-     {vegetable.length > 0 && <List items={vegetable} category='Vegetable'/>}
+     {/* {fruits.length > 0 && <List items={fruits} category='Fruits'/> }
+     {vegetable.length > 0 && <List items={vegetable} category='Vegetable'/>} */}
+     <Practice/>
     </>
   )
 }
