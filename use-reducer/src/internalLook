@@ -1,0 +1,13 @@
+function useReducer(reducer, initialState) {
+  let state = initialState;  // Set the initial state
+
+  function dispatch(action) {
+    // When dispatch is called, it triggers the reducer
+    state = reducer(state, action);  // Update the state based on the action
+  }
+
+  return [state, dispatch];  // Return state and dispatch to the component
+}
+
+
+////how reducer looks internally
