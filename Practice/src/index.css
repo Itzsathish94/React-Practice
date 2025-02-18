@@ -1,0 +1,6 @@
+.card-container{
+  border: 1px solid gray;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
