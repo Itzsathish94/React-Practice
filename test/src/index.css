@@ -1,0 +1,16 @@
+.card{
+    border: 1px solid hsla(0, 0%, 75%, 0.575);
+    border-radius: 5px;
+    box-shadow: 3px 3px hsl(0, 0%, 90%,0.5);
+    margin: 5px;
+    padding: 20px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .card-image{
+    width:60%;
+    height:auto;
+    margin-bottom: 10px;
+  }

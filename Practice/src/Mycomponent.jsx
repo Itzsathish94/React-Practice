@@ -1,29 +1,35 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useReducer } from 'react'
 
-function MyComponent({ name, age, isStudent }) {
-  console.log("Received props:", { name, age, isStudent });
 
-  return (
-    <div>
-      <h2>Student Details</h2>
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
-      <p>Student: {isStudent ? "Yes" : "No"}</p>
-      <ul>
-        {["Hi", "Hi", "Hi", "Hi"].map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <hr />
-    </div>
-  );
+function counterReducer(state,action){
+  switch(action.type){
+    case "INCREMENT":
+      return {count:state.count+1};
+    case "DECREMENT":
+    return {count:state.count-1};
+    case "RESET":
+    return {count:0};
+    default:
+      return state;
+  }
 }
 
-MyComponent.propTypes = {
-  name: PropTypes.string.isRequired, // Make it required
-  age: PropTypes.number.isRequired,
-  isStudent: PropTypes.bool.isRequired,
-};
 
-export default MyComponent;
+
+function Mycomponent() {
+
+  const [state,dispatch] = useReducer(counterReducer,{count:0});
+
+
+  return (
+
+    <div>
+      <p>Count:{state.count}</p>
+      <button onClick={()=>dispatch({type:"INCREMENT"})}>Increment</button>
+      <button onClick={()=>dispatch({type:"RESET"})} >Reset</button>
+      <button onClick={()=>dispatch({type:"DECREMENT"})} >Decrement</button>
+    </div>
+  )
+}
+
+export default Mycomponent

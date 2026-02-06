@@ -1,17 +1,15 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import MyComponent from './Mycomponent'
-import Counter from './Counter'
+import Toggle from './Toggle'
 
 const App = () => {
 
+    const [isVisible,toggle] = Toggle();
 
 
   return (
-    <>
-       <Counter/>
-    </>
+    <div>
+    <h1>{isVisible}</h1>
+    </div>
   )
 }
 

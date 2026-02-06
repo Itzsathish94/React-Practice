@@ -1,11 +1,12 @@
+
 import React from 'react'
 
-const Footer = () => {
+export default function Footer() {
   return (
-  <footer>
-    <p>&copy; {new Date().getFullYear()} - Brocamper</p>
-  </footer>
+    <div>
+      <footer>
+        <p>&copy; {new Date().getFullYear()} - Brocamp</p>
+      </footer>
+    </div>
   )
 }
-
-export default Footer

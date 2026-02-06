@@ -1,29 +1,21 @@
-import React from 'react'
-import { useState,useMemo } from 'react'
+import React, { useState } from 'react'
 
-export default function Counter() {
+function Counter() {
 
   const [count,setCount] = useState(0);
 
-  const expensiveFunction =()=>{
-    console.log('Calculatin expensive function.....')
-    let sum = 0
-    for(let i=0;i<100000;i++){
-      sum+=i
-    }
-    return sum
+  function decrement(){
+    setCount(c=>c-1)
   }
-
-  const addCount = ()=>{
-    setCount(c=>c+1)
-    console.log(count)
-  }
-
 
   return (
     <div>
-      <h1>Expesnive function:{expensiveFunction()}</h1>
-      <button onClick={addCount}>Add</button>
+      <p>Count:{count}</p>
+      <button onClick={()=>setCount(c=>c+1)}>Increment</button>
+      <button onClick={()=>setCount(0)}>Reset</button>
+      <button onClick={decrement}>Decrement</button>
     </div>
   )
 }
+
+export default Counter

@@ -1,14 +1,16 @@
-import React, { useContext } from 'react'
-import { UserContext } from './Counter'
+
+import React from 'react'
+
+function Child({setName}) {
 
 
-function Child(){
-
-    const user = useContext(UserContext);
+  function handleChange(){
+    setName('Name Changed from Child');
+  }
 
   return (
     <div>
-      <h1>Data received: {user}</h1>
+      <button onClick={handleChange}>Set Name</button>
     </div>
   )
 }

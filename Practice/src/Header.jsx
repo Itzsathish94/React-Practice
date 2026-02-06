@@ -1,20 +1,19 @@
 import React from 'react'
 
-const Header = () => {
+function Header() {
   return (
-    <header>
-    <h1>Welcome to my page</h1>
-    <nav>
-    <ul>
-      <li><a href="#"></a>Home</li>
-      <li><a href="#"></a>Home</li>
-      <li><a href="#"></a>Home</li>
-      <li><a href="#"></a>Home</li>
-      <li><a href="#"></a>Home</li>
-    </ul>
-    </nav>
-    <hr />
-   </header>
+    <div>
+      <header>
+       <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Service</a></li>
+        </ul>
+       </nav>
+      </header>
+    </div>
   )
 }
 
